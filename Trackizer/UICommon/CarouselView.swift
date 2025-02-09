@@ -120,5 +120,5 @@ struct Canvas<Content : View> : View {
 
 
 #Preview {
-    CarouselView()
+    Carousel<<#Items: View#>>()
 }
