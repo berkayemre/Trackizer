@@ -26,7 +26,7 @@ struct WeekHeaderView: View {
             } label: {
                 HStack{
                     Text(weekStore.selectedDate.monthToString())
-                        .font(.customfont(.semibold, fontSize: 14))
+                        .font(.customfont(.semiBold, fontSize: 14))
                         
                     
                     Image(systemName: "chevron.down")

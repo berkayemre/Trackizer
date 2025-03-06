@@ -53,6 +53,10 @@ struct WeeksTabView<Content: View>: View {
 }
 
 
-#Preview {
-    WeeksTabView()
+struct WeeksTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        WeeksTabView() { week in
+            WeekView(week: week)
+        }.environmentObject(WeekStore())
+    }
 }

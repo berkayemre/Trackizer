@@ -67,7 +67,7 @@ struct SettingsView: View {
                     
                 } label: {
                     Text("Edit Profile")
-                        .font(.customfont(.semibold, fontSize: 12))
+                        .font(.customfont(.semiBold, fontSize: 12))
                 }
                 .foregroundColor(  .white  )
                 .padding(8)
@@ -83,7 +83,7 @@ struct SettingsView: View {
             
             VStack(alignment: .leading, spacing: 8){
                 Text("General")
-                    .font(.customfont(.semibold, fontSize: 14))
+                    .font(.customfont(.semiBold, fontSize: 14))
                     .padding(.top, 8)
                 
                 VStack{
@@ -102,7 +102,7 @@ struct SettingsView: View {
                 .cornerRadius(16)
                 
                 Text("My subscriptions")
-                    .font(.customfont(.semibold, fontSize: 14))
+                    .font(.customfont(.semiBold, fontSize: 14))
                     .padding(.top, 8)
                 
                 VStack{
@@ -122,7 +122,7 @@ struct SettingsView: View {
                 .cornerRadius(16)
                 
                 Text("Appearance")
-                    .font(.customfont(.semibold, fontSize: 14))
+                    .font(.customfont(.semiBold, fontSize: 14))
                     .padding(.top, 8)
                 
                 VStack{

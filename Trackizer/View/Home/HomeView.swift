@@ -61,14 +61,14 @@ struct HomeView: View {
                         .foregroundColor(.white)
                     
                     Text("This month bills")
-                        .font(.customfont(.semibold, fontSize: 12))
+                        .font(.customfont(.semiBold, fontSize: 12))
                         .foregroundColor(.gray40)
                     
                     Button {
                        
                     } label: {
                         Text("See your budget")
-                            .font(.customfont(.semibold, fontSize: 12))
+                            .font(.customfont(.semiBold, fontSize: 12))
                     }
                     .foregroundColor( .white )
                     
@@ -125,7 +125,7 @@ struct HomeView: View {
                 LazyVStack(spacing: 15) {
                     ForEach( subArr , id: \.id) { sObj in
                         
-                        SubScriptionHomeRow(sObj: sObj)
+                        SubscriptionHomeRow(sObj: sObj)
                         
                     }
                 }

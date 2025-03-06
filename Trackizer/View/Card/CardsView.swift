@@ -87,22 +87,22 @@ struct CardsView: View {
                                 .frame(width: 50)
                             
                             Text("Virtual Card")
-                                .font(.customfont(.semibold, fontSize: 16))
+                                .font(.customfont(.semiBold, fontSize: 16))
                             
                             Spacer()
                                 .frame(height: 107)
                             
                             Text(cObj.name)
-                                .font(.customfont(.semibold, fontSize: 12))
+                                .font(.customfont(.semiBold, fontSize: 12))
                                 .foregroundColor(.gray20)
                             
                             
                             Text(cObj.number)
-                                .font(.customfont(.semibold, fontSize: 16))
+                                .font(.customfont(.semiBold, fontSize: 16))
                             
                             
                             Text(cObj.month_year)
-                                .font(.customfont(.semibold, fontSize: 14))
+                                .font(.customfont(.semiBold, fontSize: 14))
                             
                             
                             Spacer()
@@ -116,7 +116,7 @@ struct CardsView: View {
                 
                 VStack{
                     Text("Subscriptions")
-                        .font(.customfont(.semibold, fontSize: 16))
+                        .font(.customfont(.semiBold, fontSize: 16))
                     
                     HStack(spacing: 10){
                         
@@ -141,7 +141,7 @@ struct CardsView: View {
                     } label: {
                         HStack{
                             Text("Add new card ")
-                                .font(.customfont(.semibold, fontSize: 14))
+                                .font(.customfont(.semiBold, fontSize: 14))
                             
                             Image("add")
                                 .resizable()

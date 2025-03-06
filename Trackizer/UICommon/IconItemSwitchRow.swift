@@ -35,6 +35,10 @@ struct IconItemSwitchRow: View {
     }
 }
 
-#Preview {
-    IconItemSwitchRow(value: <#Binding<Bool>#>)
+struct IconItemSwitchRow_Previews: PreviewProvider {
+    @State static var isNO: Bool = false
+    static var previews: some View {
+        IconItemSwitchRow( value: $isNO)
+            .background(Color.gray60.opacity(0.2))
+    }
 }

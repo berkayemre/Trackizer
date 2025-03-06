@@ -76,7 +76,7 @@ struct BudgetsView: View {
                 
             } label: {
                 Text("Your budgets are on tack 👍")
-                    .font(.customfont(.semibold, fontSize: 14))
+                    .font(.customfont(.semiBold, fontSize: 14))
             }
             .foregroundColor( .white )
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 64, maxHeight: 64)
@@ -106,7 +106,7 @@ struct BudgetsView: View {
             } label: {
                 HStack{
                     Text("Add new category ")
-                        .font(.customfont(.semibold, fontSize: 14))
+                        .font(.customfont(.semiBold, fontSize: 14))
                     
                     Image("add")
                         .resizable()

@@ -57,7 +57,10 @@ struct RoundTextField: View {
     }
 }
 
-
-#Preview {
-    RoundTextField(text: <#Binding<String>#>)
+struct RoundTextField_Previews: PreviewProvider {
+    @State static var txt: String = ""
+    static var previews: some View {
+        RoundTextField(text: $txt)
+    }
 }
+

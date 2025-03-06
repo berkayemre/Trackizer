@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     
+    @State var showSignIn: Bool = false
+    @State var showSignUp: Bool = false
+    
     var body: some View {
         ZStack {
             Image("welcome_screen")
@@ -33,12 +36,12 @@ struct MainView: View {
                     .padding(.bottom, 30)
                 
                 PrimaryButton(title: "Get Started", onPressed: {
-                    //
+                    showSignUp.toggle()
                 })
                 .padding(.bottom, 15)
                 
                 SecondaryButton(title: "I have an account") {
-                    //
+                    showSignIn.toggle()
                 }
                 .padding(.bottom, .bottomInsets)
             }

@@ -154,7 +154,7 @@ struct AddSubscriptionView: View {
                 
                 VStack(spacing:0){
                     Text("Mothly price")
-                        .font(.customfont(.semibold, fontSize: 12))
+                        .font(.customfont(.semiBold, fontSize: 12))
                         .foregroundColor(.gray40)
                     Spacer()
                         .frame(height: 4)
@@ -205,6 +205,9 @@ struct AddSubscriptionView: View {
     }
 }
 
-#Preview {
-    AddSubscriptionView()
+
+struct AddSubscriptionView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddSubscriptionView(UIState: UIStateModel())
+    }
 }
